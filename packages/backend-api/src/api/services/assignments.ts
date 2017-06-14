@@ -23,8 +23,8 @@ import {
   ModeratorAssignment,
   User,
   UserCategoryAssignment,
-} from '@conversationai/moderator-backend-core';
-import * as JSONAPI from '@conversationai/moderator-jsonapi';
+} from '@instrument/moderator-backend-core';
+import * as JSONAPI from '@instrument/moderator-jsonapi';
 import * as express from 'express';
 import { list } from '../util/SequelizeHandler';
 

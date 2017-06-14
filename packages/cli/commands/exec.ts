@@ -16,7 +16,7 @@ limitations under the License.
 
 import {
   logger,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import { exec } from 'child_process';
 import * as fs from 'fs';
 import * as yaml from 'js-yaml';

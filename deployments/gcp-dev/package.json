@@ -1,7 +1,7 @@
 {
-  "name": "osmod-gcp-staging",
+  "name": "osmod-gcp-dev",
   "version": "1.0.0",
-  "description": "Staging",
+  "description": "Dev",
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -13,7 +13,6 @@
     "@instrument/moderator-backend-core": "dev",
     "@instrument/moderator-backend-api": "dev",
     "@instrument/moderator-backend-queue": "dev",
-    "@instrument/moderator-frontend-web": "dev",
-    "@instrument/moderator-cli": "dev"
+    "@instrument/moderator-frontend-web": "dev"
   }
 }

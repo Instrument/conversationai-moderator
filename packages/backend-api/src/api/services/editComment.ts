@@ -18,8 +18,8 @@ import {
     Comment,
     logger,
     trigger,
-} from '@conversationai/moderator-backend-core';
-import { enqueue, ISendCommentForScoringTaskData } from '@conversationai/moderator-backend-queue';
+} from '@instrument/moderator-backend-core';
+import { enqueue, ISendCommentForScoringTaskData } from '@instrument/moderator-backend-queue';
 import * as express from 'express';
 import * as Joi from 'joi';
 import { validateRequest } from '../util/validation';

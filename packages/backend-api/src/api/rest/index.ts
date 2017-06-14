@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { createModelRouter } from '@conversationai/moderator-jsonapi';
+import { createModelRouter } from '@instrument/moderator-jsonapi';
 import * as express from 'express';
 import { onlyAdminAndServices } from '../util/permissions';
 import * as SequelizeHandler from '../util/SequelizeHandler';

@@ -17,7 +17,7 @@ limitations under the License.
 import {
   INewResource,
   IParams,
-} from '@conversationai/moderator-jsonapi/src/types';
+} from '@instrument/moderator-jsonapi/src/types';
 import axios from 'axios';
 import { fromJS, List, Map } from 'immutable';
 import { isNaN, pick } from 'lodash';

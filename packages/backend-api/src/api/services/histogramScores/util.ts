@@ -19,9 +19,9 @@ import {
   Category,
   sequelize as sequelizeInstance,
   Tag,
-} from '@conversationai/moderator-backend-core';
-import { DotChartRenderer, groupByDateColumns, groupByScoreColumns } from '@conversationai/moderator-frontend-web';
-import * as JSONAPI from '@conversationai/moderator-jsonapi';
+} from '@instrument/moderator-backend-core';
+import { DotChartRenderer, groupByDateColumns, groupByScoreColumns } from '@instrument/moderator-frontend-web';
+import * as JSONAPI from '@instrument/moderator-jsonapi';
 import { sort } from '../../util/SequelizeHandler';
 
 export interface ICommentScoredOrDated {

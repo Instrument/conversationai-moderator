@@ -1,5 +1,5 @@
-const { config } = require('@conversationai/moderator-config');
-const { makeServer } = require('@conversationai/moderator-backend-core');
+const { config } = require('@instrument/moderator-config');
+const { makeServer } = require('@instrument/moderator-backend-core');
 const { startProcessing, mountCronAPI, mountTaskAPI, mountQueueDashboard } = require('./dist/index');
 
 // Start the queue worker

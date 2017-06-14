@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { calculateTextSize, Comment, logger } from '@conversationai/moderator-backend-core';
+import { calculateTextSize, Comment, logger } from '@instrument/moderator-backend-core';
 import * as yargs from 'yargs';
 
 export const command = 'comments:calculate-text-size';
