@@ -10,10 +10,10 @@
   "dependencies": {
     "@google-cloud/debug-agent": "2.1.0",
     "@google-cloud/trace-agent": "2.1.0",
-    "@conversationai/moderator-backend-core": "dev",
-    "@conversationai/moderator-backend-api": "dev",
-    "@conversationai/moderator-backend-queue": "dev",
-    "@conversationai/moderator-frontend-web": "dev",
-    "@conversationai/moderator-cli": "dev"
+    "@instrument/moderator-backend-core": "dev",
+    "@instrument/moderator-backend-api": "dev",
+    "@instrument/moderator-backend-queue": "dev",
+    "@instrument/moderator-frontend-web": "dev",
+    "@instrument/moderator-cli": "dev"
   }
 }
