@@ -303,7 +303,8 @@ export interface INewCommentsState {
   confirmationAction?: ICommentAction;
   actionCount?: number;
   actionText?: string;
-  toastButtonLabel?: 'Undo';
+  actionInProgress?: boolean;
+  toastButtonLabel?: string;
   toastIcon?: JSX.Element;
   ruleToastIcon?: JSX.Element;
   showCount?: boolean;
@@ -342,6 +343,7 @@ export class NewComments extends React.Component<INewCommentsProps, INewComments
     confirmationAction: null,
     actionCount: 0,
     actionText: '',
+    actionInProgress: false,
     toastButtonLabel: null,
     toastIcon: null,
     ruleToastIcon: null,
@@ -979,9 +981,17 @@ export class NewComments extends React.Component<INewCommentsProps, INewComments
         return false;
       } else {
         this.setState({
-          toastButtonLabel: null,
+          toastButtonLabel: 'Moderating...',
+          actionInProgress: true,
         });
-        await callback(action);
+        try {
+          await callback(action);
+        } catch (error) {
+          this.setState({
+            toastButtonLabel: 'Error moderating. Please retry.',
+            actionInProgress: false,
+          })
+        }
         this.confirmationClose();
       }
     }, TOAST_DELAY);
@@ -1062,7 +1072,10 @@ export class NewComments extends React.Component<INewCommentsProps, INewComments
 
   @autobind
   confirmationClose() {
-    this.setState({ isConfirmationModalVisible: false });
+    this.setState({
+      isConfirmationModalVisible: false,
+      actionInProgress: false,
+    });
   }
 
   @autobind
@@ -1077,6 +1090,9 @@ export class NewComments extends React.Component<INewCommentsProps, INewComments
 
   @autobind
   handleUndoClick() {
+    if (this.state.actionInProgress) {
+      return false;
+    }
     this.commentActionCancelled = true;
     this.confirmationClose();
   }
