@@ -18,7 +18,7 @@ import {
   Comment,
   logger,
   resendForScoring,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import * as yargs from 'yargs';
 
 export const command = 'comments:rescore';

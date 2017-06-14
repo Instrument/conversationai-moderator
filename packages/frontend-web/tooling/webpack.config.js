@@ -16,7 +16,7 @@ limitations under the License.
 
 var path = require('path');
 var webpack = require('webpack');
-var config = require('@conversationai/moderator-config').config;
+var config = require('@instrument/moderator-config').config;
 
 module.exports = {
   entry: {

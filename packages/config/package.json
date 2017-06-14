@@ -1,7 +1,7 @@
 {
-  "name": "@conversationai/moderator-config",
+  "name": "@instrument/moderator-config",
   "description": "Shared Config logic for OSMod",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.228a9401",
   "main": "index.js",
   "license": "Apache-2.0",
   "engines": {

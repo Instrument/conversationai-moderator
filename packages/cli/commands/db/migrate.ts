@@ -39,8 +39,8 @@ function getPackagePath(packageName: string) {
   return path.dirname(packageFolder);
 }
 
-const corePath = getPackagePath('@conversationai/moderator-backend-core');
-const configPath = getPackagePath('@conversationai/moderator-config');
+const corePath = getPackagePath('@instrument/moderator-backend-core');
+const configPath = getPackagePath('@instrument/moderator-config');
 const sequelizeCli = path.join(getPackagePath('sequelize-cli'),  'bin', 'sequelize');
 // Default to the npm bin format installed by sequelize-cli
 let sequelizeCmdPath = 'sequelize';

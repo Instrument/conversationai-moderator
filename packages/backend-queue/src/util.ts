@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { logger } from '@conversationai/moderator-backend-core';
-import { config } from '@conversationai/moderator-config';
+import { logger } from '@instrument/moderator-backend-core';
+import { config } from '@instrument/moderator-config';
 import { createQueue, Job, Queue } from 'kue';
 
 export type IKnownTasks = (

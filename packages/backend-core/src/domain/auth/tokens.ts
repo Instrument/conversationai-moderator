@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { config } from '@conversationai/moderator-config';
+import { config } from '@instrument/moderator-config';
 import * as jwt from 'jsonwebtoken';
 import { isNumber } from 'lodash';
 import * as moment from 'moment';

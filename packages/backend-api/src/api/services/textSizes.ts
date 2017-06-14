@@ -17,7 +17,7 @@ limitations under the License.
 import {
   CommentSize,
   ICommentSizeInstance,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import * as express from 'express';
 import * as Joi from 'joi';
 import { validateAndSendResponse, validateRequest } from '../util/validation';

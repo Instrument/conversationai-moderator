@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { sequelize as sequelizeInstance, Tag } from '@conversationai/moderator-backend-core';
-import * as JSONAPI from '@conversationai/moderator-jsonapi';
+import { sequelize as sequelizeInstance, Tag } from '@instrument/moderator-backend-core';
+import * as JSONAPI from '@instrument/moderator-jsonapi';
 import * as express from 'express';
 import * as Joi from 'joi';
 import { mapValues } from 'lodash';

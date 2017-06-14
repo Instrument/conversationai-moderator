@@ -20,7 +20,7 @@ import {
   IArticleInstance,
   ModeratorAssignment,
   UserCategoryAssignment,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 
 export interface IArticleOptionallyCreated {
   article: IArticleInstance;

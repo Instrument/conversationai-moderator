@@ -25,7 +25,7 @@ import {
   verifyToken,
 } from '../../../domain/auth/tokens';
 
-import { config } from '@conversationai/moderator-config';
+import { config } from '@instrument/moderator-config';
 
 const assert = chai.assert;
 

@@ -16,7 +16,7 @@ limitations under the License.
 
 import * as chai from 'chai';
 const chaiHttp = require('chai-http');
-import { makeServer } from '@conversationai/moderator-backend-core';
+import { makeServer } from '@instrument/moderator-backend-core';
 import { omit } from 'lodash';
 import {
   ArticleSerializer,
@@ -28,9 +28,9 @@ import {
   createModelRouter,
   MockHandler,
   toIdentifier,
-} from '@conversationai/moderator-jsonapi';
+} from '@instrument/moderator-jsonapi';
 
-import { fakeArticleModel, fakeCommentModel, fakeUserModel } from '@conversationai/moderator-frontend-web';
+import { fakeArticleModel, fakeCommentModel, fakeUserModel } from '@instrument/moderator-frontend-web';
 
 const { app: server } = makeServer(true);
 

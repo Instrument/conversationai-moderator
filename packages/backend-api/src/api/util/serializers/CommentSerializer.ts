@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Serializer } from '@conversationai/moderator-jsonapi';
+import { Serializer } from '@instrument/moderator-jsonapi';
 
 export class CommentSerializer extends Serializer {
   constructor(prefix: string) {

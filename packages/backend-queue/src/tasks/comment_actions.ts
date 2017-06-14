@@ -30,7 +30,7 @@ import {
   reset,
   Tag,
   User,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import {
   handler,
   IJobLogger,

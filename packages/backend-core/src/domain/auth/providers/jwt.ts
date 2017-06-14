@@ -20,7 +20,7 @@ import { IUserInstance } from '../../../models/user';
 import { isValidToken } from '../tokens';
 import { isValidUser } from '../users';
 
-import { config } from '@conversationai/moderator-config';
+import { config } from '@instrument/moderator-config';
 
 /**
  * Verify JWT payload from JWT Passportstrategy

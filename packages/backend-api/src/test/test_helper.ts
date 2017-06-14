@@ -36,7 +36,7 @@ import {
   Tag,
   TaggingSensitivity,
   User,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 
 const TEST_ENVS = ['test', 'circle_ci'];
 

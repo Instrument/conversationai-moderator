@@ -20,8 +20,8 @@ import {
   ICommentInstance,
   ITopScores,
   TaggingSensitivity,
-} from '@conversationai/moderator-backend-core';
-import { IFields, IListDetails }from '@conversationai/moderator-jsonapi';
+} from '@instrument/moderator-backend-core';
+import { IFields, IListDetails }from '@instrument/moderator-jsonapi';
 import * as Bluebird from 'bluebird';
 import { list } from './SequelizeHandler';
 

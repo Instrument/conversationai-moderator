@@ -21,7 +21,7 @@ import {
   CommentRecommendation,
   denormalizeCommentCountsForArticle,
   denormalizeFlaggedAndRecommendedCountsForComment,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import { handler, IQueueHandler } from '../util';
 
 export interface ICoreTagData {

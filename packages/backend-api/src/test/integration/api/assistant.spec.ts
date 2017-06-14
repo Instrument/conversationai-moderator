@@ -17,7 +17,7 @@ limitations under the License.
 import {
   CommentScoreRequest,
   sequelize,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import {
   expect,
   makeComment,

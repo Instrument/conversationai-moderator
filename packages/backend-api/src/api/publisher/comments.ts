@@ -20,8 +20,8 @@ import {
   ICommentInstance, logger,
   postProcessComment,
   triggerMapFirst,
-} from '@conversationai/moderator-backend-core';
-import { enqueue, ISendCommentForScoringTaskData } from '@conversationai/moderator-backend-queue';
+} from '@instrument/moderator-backend-core';
+import { enqueue, ISendCommentForScoringTaskData } from '@instrument/moderator-backend-queue';
 import * as Bluebird from 'bluebird';
 
 /**

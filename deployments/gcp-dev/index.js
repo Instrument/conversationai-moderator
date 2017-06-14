@@ -22,8 +22,14 @@ if (process.env.NODE_ENV === 'production') {
 
 const { makeServer } = require('@instrument/moderator-backend-core');
 const { mountWebFrontend } = require('@instrument/moderator-frontend-web');
-const { mountAPI } = require('@instrument/moderator-backend-api');
-const { mountQueueDashboard, startProcessing } = require('@instrument/moderator-backend-queue');
+const { mountAPI, createPublisherRouter } = require('@instrument/moderator-backend-api');
+const {
+    mountCronAPI,
+    mountQueueDashboard,
+    mountTaskAPI,
+    startProcessing,
+    verifyAppEngineCron
+} = require('@instrument/moderator-backend-queue');
 
 /**
  * Queue setup.
@@ -51,8 +57,19 @@ app.use('/', mountWebFrontend());
 // Start up the api
 app.use('/api', mountAPI());
 
-// Start up queue dashboard
-app.use('/queue', mountQueueDashboard());
+// Backwards compat.
+app.use('/publisher/nytimes', createPublisherRouter());
 
+// Set up the queue Task API.
+app.use('/queue/tasks', mountTaskAPI());
+
+// Set up the queue Cron API.
+app.use('/queue/cron', verifyAppEngineCron, mountCronAPI());
+
+// Our application will need to respond to health checks when running on
+// Compute Engine with Managed Instance Groups.
+app.get('/_ah/health', (req, res) => {
+  res.status(200).send('ok');
+});
 
 start(8080);

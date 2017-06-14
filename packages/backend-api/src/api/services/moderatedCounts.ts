@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { Article, Category, Comment } from '@conversationai/moderator-backend-core';
+import { Article, Category, Comment } from '@instrument/moderator-backend-core';
 import * as express from 'express';
 import * as Joi from 'joi';
 import { mapValues } from 'lodash';
