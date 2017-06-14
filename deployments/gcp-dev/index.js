@@ -20,6 +20,7 @@ if (process.env.NODE_ENV === 'production') {
   require('@google-cloud/debug-agent');
 }
 
+
 const { makeServer } = require('@instrument/moderator-backend-core');
 const { mountWebFrontend } = require('@instrument/moderator-frontend-web');
 const { mountAPI, createPublisherRouter } = require('@instrument/moderator-backend-api');
