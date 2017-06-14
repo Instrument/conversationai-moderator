@@ -15,16 +15,6 @@ Quick Links:
 * [Updating Data (PATCH Requests)](#updating-data-patch-requests)
 * [Deleting Data (DELETE Requests)](#deleting-data-delete-requests)
 
-## Staging Server
-
-Currently running on Google App Engine:
-
-[https://dev-dot-osmod-1350.appspot-preview.com](https://dev-dot-osmod-1350.appspot-preview.com)
-
-Specifically, requests to the REST API are at:
-
-[https://dev-dot-osmod-1350.appspot-preview.com/api/rest](https://dev-dot-osmod-1350.appspot-preview.com/api/rest)
-
 ## Available Models
 
 The following models are available on staging:

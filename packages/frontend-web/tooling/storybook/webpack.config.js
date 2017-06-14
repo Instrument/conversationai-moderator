@@ -43,7 +43,7 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       __DEVELOPMENT__: true,
-      ENV_API_URL: "'" + (process.env['API_URL'] || 'https://dev-dot-osmod-1350.appspot-preview.com/api') + "'"
+      ENV_API_URL: process.env['API_URL'] ? "'" + (process.env['API_URL']) + "'" : undefined
     }),
   ]
 }

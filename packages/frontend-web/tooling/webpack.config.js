@@ -66,7 +66,7 @@ module.exports = {
     new webpack.DefinePlugin({
       __DEVELOPMENT__: false,
       __DEVPANEL__: true,
-      ENV_API_URL: "'" + (process.env['API_URL'] || 'https://dev-dot-osmod-1350.appspot-preview.com/api') + "'",
+      ENV_API_URL: process.env['API_URL'] ? "'" + (process.env['API_URL']) + "'" : undefined,
       ENV_APP_NAME: "'" + (process.env['APP_NAME'] || 'Moderator') + "'",
       ENV_REQUIRE_REASON_TO_REJECT: (process.env['REQUIRE_REASON_TO_REJECT'] || true),
       ENV_RESTRICT_TO_SESSION: (process.env['RESTRICT_TO_SESSION'] || true),
