@@ -19,13 +19,13 @@ import {
   Decision,
   logger,
   sequelize,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import {
   enqueue,
   IProcessTagAdditionData,
   IProcessTagRevocationData,
-} from '@conversationai/moderator-backend-queue';
-import * as JSONAPI from '@conversationai/moderator-jsonapi';
+} from '@instrument/moderator-backend-queue';
+import * as JSONAPI from '@instrument/moderator-jsonapi';
 import * as express from 'express';
 import * as Joi from 'joi';
 import { list } from '../util/SequelizeHandler';

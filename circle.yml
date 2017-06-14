@@ -1,5 +1,6 @@
 machine:
   environment:
+    GCLOUD_PROJECT: "osmod-1350"
     NODE_ENV: circle_ci
   node:
     version: 6.11.0
@@ -38,3 +39,13 @@ test:
     - ./bin/lint
     - ./bin/check-nsp
     - ./bin/test-no-compile
+
+deployment:
+  gae_dev:
+    branch: /^dev$/
+    commands:
+      - echo $CLIENT_SECRET | base64 --decode > ${HOME}/client-secret.json
+      - gcloud --quiet components update app
+      - gcloud auth activate-service-account --key-file ${HOME}/client-secret.json
+      - gcloud config set project $GCLOUD_PROJECT
+      - ./bin/deploy-no-install

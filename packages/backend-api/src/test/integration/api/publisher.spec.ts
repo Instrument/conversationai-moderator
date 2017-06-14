@@ -16,7 +16,7 @@ limitations under the License.
 
 import {
   Article,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import { createArticleIfNonExistant, IArticleData } from '../../../api/publisher/articles';
 import {
   expect,

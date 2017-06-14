@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { createToken, CSRF, IUserInstance } from '@conversationai/moderator-backend-core';
-import { config } from '@conversationai/moderator-config';
+import { createToken, CSRF, IUserInstance } from '@instrument/moderator-backend-core';
+import { config } from '@instrument/moderator-config';
 import * as express from 'express';
 import * as moment from 'moment';
 import * as passport from 'passport';

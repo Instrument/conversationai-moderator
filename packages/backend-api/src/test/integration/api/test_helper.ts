@@ -16,7 +16,7 @@ limitations under the License.
 
 import * as chai from 'chai';
 const chaiHttp = require('chai-http');
-import { makeServer } from '@conversationai/moderator-backend-core';
+import { makeServer } from '@instrument/moderator-backend-core';
 import { mountAPI } from '../../../index';
 
 chai.use(chaiHttp);

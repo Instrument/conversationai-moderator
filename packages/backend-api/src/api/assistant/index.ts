@@ -17,12 +17,12 @@ limitations under the License.
 import {
   CommentScoreRequest,
   logger,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import {
   enqueue,
   IProcessMachineScoreData,
   IScoreData,
-} from '@conversationai/moderator-backend-queue';
+} from '@instrument/moderator-backend-queue';
 import * as express from 'express';
 import { onlyServices } from '../util/permissions';
 import { validateRequest } from '../util/validation';

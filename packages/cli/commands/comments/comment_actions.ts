@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { createToken, logger, User } from '@conversationai/moderator-backend-core';
+import { createToken, logger, User } from '@instrument/moderator-backend-core';
 import * as Bluebird from 'bluebird';
 import * as requestRaw from 'request';
 import * as yargs from 'yargs';

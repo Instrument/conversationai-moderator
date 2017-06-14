@@ -25,7 +25,7 @@ import {
 
 import {
   Comment,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 
 const URL = `/services/editComment`;
 

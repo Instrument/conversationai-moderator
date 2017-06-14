@@ -1,0 +1,6 @@
+#!/bin/bash
+
+./node_modules/.bin/lerna publish --canary --exact --yes --npm-tag dev --force-publish="*" && \
+gcloud app deploy -q deployments/gcp-dev/cron.yaml --project="osmod-1350" && \
+gcloud app deploy -q --promote deployments/gcp-dev/app.yaml --project="osmod-1350" && \
+./bin/osmod exec --yaml deployments/gcp-dev/app.yaml --command="./bin/osmod migrate"

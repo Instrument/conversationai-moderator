@@ -16,7 +16,7 @@ limitations under the License.
 
 const winston = require('winston');
 const expressWinston = require('express-winston');
-import { config } from '@conversationai/moderator-config';
+import { config } from '@instrument/moderator-config';
 
 const colorize = (
   (process.env.NODE_ENV !== 'production') &&

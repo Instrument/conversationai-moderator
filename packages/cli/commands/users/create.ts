@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { logger, User, USER_GROUPS } from '@conversationai/moderator-backend-core';
+import { logger, User, USER_GROUPS } from '@instrument/moderator-backend-core';
 import * as yargs from 'yargs';
 
 export const command = 'users:create';

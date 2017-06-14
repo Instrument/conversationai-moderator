@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { cacheTextSize, Comment, CommentSize, logger } from '@conversationai/moderator-backend-core';
+import { cacheTextSize, Comment, CommentSize, logger } from '@instrument/moderator-backend-core';
 import * as Bluebird from 'bluebird';
 import * as yargs from 'yargs';
 
