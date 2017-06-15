@@ -990,7 +990,7 @@ export class NewComments extends React.Component<INewCommentsProps, INewComments
           this.setState({
             toastButtonLabel: 'Error moderating. Please retry.',
             actionInProgress: false,
-          })
+          });
         }
         this.confirmationClose();
       }
