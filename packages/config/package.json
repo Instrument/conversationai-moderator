@@ -1,5 +1,5 @@
 {
-  "name": "@conversationai/moderator-config",
+  "name": "@instrument/moderator-config",
   "description": "Shared Config logic for OSMod",
   "version": "1.0.0",
   "main": "index.js",

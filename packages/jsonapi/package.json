@@ -1,5 +1,5 @@
 {
-  "name": "@conversationai/moderator-jsonapi",
+  "name": "@instrument/moderator-jsonapi",
   "description": "JSONAPI implementation for OSMod",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",

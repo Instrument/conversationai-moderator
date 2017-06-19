@@ -1,0 +1,9 @@
+cron:
+
+- description: >
+    Run the heartbeat every so often to resend comments that have failed
+    to be scored.
+
+  url: /queue/cron/heartbeat
+  schedule: every 10 mins
+  target: mirror

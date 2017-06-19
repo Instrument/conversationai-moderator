@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { byType } from '@conversationai/moderator-backend-core';
+import { byType } from '@instrument/moderator-backend-core';
 import {
   IFilters,
   IItemDetails,
@@ -26,7 +26,7 @@ import {
   IResourceIdentifier,
   IStatusError,
   Serializer,
-} from '@conversationai/moderator-jsonapi';
+} from '@instrument/moderator-jsonapi';
 import * as Bluebird from 'bluebird';
 import { isObject, isString, uniq, uniqWith } from 'lodash';
 import { byType as serializersClassesByType } from './serializers';

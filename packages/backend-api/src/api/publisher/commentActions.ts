@@ -18,7 +18,7 @@ import {
   enqueue,
   ICommentActionData,
   IKnownTasks,
-} from '@conversationai/moderator-backend-queue';
+} from '@instrument/moderator-backend-queue';
 import * as express from 'express';
 import * as Joi from 'joi';
 import { dataSchema, validateRequest } from '../util/validation';

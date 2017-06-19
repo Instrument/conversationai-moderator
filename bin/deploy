@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# Install all deps
+./bin/install
+
+./bin/deploy-no-install

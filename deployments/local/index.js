@@ -16,14 +16,14 @@ limitations under the License.
 
 // Activate Google Cloud Trace and Debug when in production
 if (process.env.NODE_ENV === 'production') {
-  require('@google/cloud-trace').start();
-  require('@google/cloud-debug');
+  require('@google-cloud/trace-agent').start();
+  require('@google-cloud/debug-agent');
 }
 
-const { makeServer } = require('@conversationai/moderator-backend-core');
-const { mountWebFrontend } = require('@conversationai/moderator-frontend-web');
-const { mountAPI } = require('@conversationai/moderator-backend-api');
-const { mountQueueDashboard, startProcessing } = require('@conversationai/moderator-backend-queue');
+const { makeServer } = require('@instrument/moderator-backend-core');
+const { mountWebFrontend } = require('@instrument/moderator-frontend-web');
+const { mountAPI } = require('@instrument/moderator-backend-api');
+const { mountQueueDashboard, startProcessing } = require('@instrument/moderator-backend-queue');
 
 /**
  * Queue setup.

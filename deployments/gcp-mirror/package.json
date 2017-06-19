@@ -1,0 +1,19 @@
+{
+  "name": "osmod-gcp-mirror",
+  "version": "1.0.0",
+  "description": "Mirror",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google-cloud/debug-agent": "2.1.0",
+    "@google-cloud/trace-agent": "2.1.0",
+    "@conversationai/moderator-cli": "latest",
+    "@conversationai/moderator-backend-core": "latest",
+    "@conversationai/moderator-backend-api": "latest",
+    "@conversationai/moderator-backend-queue": "latest",
+    "@conversationai/moderator-frontend-web": "latest"
+  }
+}

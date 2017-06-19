@@ -14,12 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { NotFoundError } from '@conversationai/moderator-jsonapi';
+import { NotFoundError } from '@instrument/moderator-jsonapi';
 
 import {
   IArticleInstance,
   ICategoryInstance,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 
 import {
   expect,

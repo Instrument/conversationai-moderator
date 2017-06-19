@@ -1,0 +1,10 @@
+.data
+.vagrant
+.dockerignore
+node_modules
+Dockerfile
+npm-debug.log
+package-lock.json
+.git
+.hg
+.svn

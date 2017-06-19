@@ -1,0 +1,38 @@
+runtime: custom
+env: flex
+threadsafe: true
+service: default
+
+handlers:
+- url: /.*
+  script: IGNORED
+
+beta_settings:
+  cloud_sql_instances: "osmod-1350:us-central1:osmod-development-branch"
+
+env_variables:
+  DATABASE_NAME: "os_moderator"
+  DATABASE_USER: "root"
+  DATABASE_PASSWORD: "Instrum3nt"
+  DATABASE_HOST: "104.155.157.253"
+  DATABASE_SOCKET: "/cloudsql/osmod-1350:us-central1:osmod-development-branch"
+  HTTPS_LINKS_ONLY: 'true'
+  TOKEN_SECRET: 'F7capZMWx8CDUJ'
+  TOKEN_ISSUER: 'Open Source Moderator (Dev)'
+  WORKER_RUN_IMMEDIATELY: "true"
+  API_URL: '/api'
+  FRONTEND_URL: ''
+  APP_NAME: 'Moderator (Dev)'
+  PUBLISHER_NOTIFICATION_MODE: 'noop'
+  REDIRECT_OAUTH_TO: 'referrer'
+  MODERATOR_GUIDELINES_URL: 'https://www.perspectiveapi.com/'
+  SUBMIT_FEEDBACK_URL: 'http://www.google.com'
+  REQUIRE_REASON_TO_REJECT: 'true'
+  RESTRICT_TO_SESSION: 'true'
+  GOOGLE_CLIENT_ID: "371591676347-e8va7i3lq4u8ulgjjnpgstcjaluf55v7.apps.googleusercontent.com"
+  GOOGLE_CLIENT_SECRET: "ze06spF32i4B6gBoNsJfz3iS"
+  GOOGLE_SCORE_AUTH: "TWFrZSBjb21tZW50cyBncmVhdCBhZ2FpbiE"
+
+# Temporary setting to keep gcloud from uploading node_modules
+skip_files:
+ - ^node_modules$

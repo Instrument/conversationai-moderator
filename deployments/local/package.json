@@ -1,19 +1,19 @@
 {
-  "name": "osmod-gcp-dev",
+  "name": "osmod-gcp-staging",
   "version": "1.0.0",
-  "description": "Dev",
+  "description": "Staging",
   "main": "index.js",
   "private": true,
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "@google/cloud-debug": "0.9.3",
-    "@google/cloud-trace": "0.6.3",
-    "@conversationai/moderator-backend-core": "dev",
-    "@conversationai/moderator-backend-api": "dev",
-    "@conversationai/moderator-backend-queue": "dev",
-    "@conversationai/moderator-frontend-web": "dev",
-    "@conversationai/moderator-cli": "dev"
+    "@google-cloud/debug-agent": "2.1.0",
+    "@google-cloud/trace-agent": "2.1.0",
+    "@instrument/moderator-backend-core": "dev",
+    "@instrument/moderator-backend-api": "dev",
+    "@instrument/moderator-backend-queue": "dev",
+    "@instrument/moderator-frontend-web": "dev",
+    "@instrument/moderator-cli": "dev"
   }
 }

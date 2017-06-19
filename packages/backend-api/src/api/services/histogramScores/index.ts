@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import * as JSONAPI from '@conversationai/moderator-jsonapi';
+import * as JSONAPI from '@instrument/moderator-jsonapi';
 import * as express from 'express';
 import * as Joi from 'joi';
 import { validateAndSendResponse } from '../../util/validation';

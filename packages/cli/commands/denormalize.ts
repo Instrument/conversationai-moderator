@@ -22,7 +22,7 @@ import {
   IArticleInstance,
   ICommentInstance,
   logger,
-} from '@conversationai/moderator-backend-core';
+} from '@instrument/moderator-backend-core';
 import * as Bluebird from 'bluebird';
 import * as yargs from 'yargs';
 

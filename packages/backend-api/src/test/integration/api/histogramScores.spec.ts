@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { cacheCommentTopScores } from '@conversationai/moderator-backend-core';
+import { cacheCommentTopScores } from '@instrument/moderator-backend-core';
 import {
   expect,
   makeArticle,

@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { cacheCommentTopScore, Comment, CommentTopScore, logger, Tag } from '@conversationai/moderator-backend-core';
+import { cacheCommentTopScore, Comment, CommentTopScore, logger, Tag } from '@instrument/moderator-backend-core';
 import * as yargs from 'yargs';
 
 export const command = 'comments:recalculate-top-scores';

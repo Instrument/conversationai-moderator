@@ -53,7 +53,7 @@ const request = Bluebird.promisify(requestRaw) as any;
 Bluebird.promisifyAll(request);
 
 const striptags = require('striptags');
-import { config } from '@conversationai/moderator-config';
+import { config } from '@instrument/moderator-config';
 
 export interface IScore {
   score: number;

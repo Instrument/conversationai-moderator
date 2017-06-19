@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-import { config } from '@conversationai/moderator-config';
+import { config } from '@instrument/moderator-config';
 import { findOrCreateUserSocialAuth } from '../users';
 const Strategy = require('passport-google-oauth20').Strategy;
 
